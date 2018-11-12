@@ -1,0 +1,10 @@
+<h1 class="text-center avatar-description"> Made with <i class="far fa-heart"></i> by</h1>
+<ul class="list-inline text-center">
+  <% ["RochaLS", "lvedder"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle avatar-team" %>
+      <h3 class="avatar-description"><%= gh_username %></h3>
+      <a href="https://github.com/#{gh_username}"><i class="fab fa-github"></i><%= gh_username %></a>
+    </li>
+  <% end %>
+</ul>
